@@ -35,4 +35,17 @@
     * Implemented a faster edit/view functionality by guessing input id/title
     * Updated bash shortcuts
     * Updated Documentation
-
+0.1.6
+    * Added full path list mode (kb list -f)
+    * Added rofi custom mode
+    * Added grep matches mode (kb grep "string" -m)
+    * Fixed important bug in grep mode
+    * Added sync mode
+0.1.7 (draft)
+    * Fixed grep bug with pull request 89
+    * XDG Compliance: moving files to `$XDG_DATA_HOME/kb`, if it exists, and fall back 
+      to `$HOME/.local/share/kb` if that environment variable does not exist
+    * Added kb to pkgsrc
+    * Added stdin functionality to add artifacts. For example:
+      `cat ../script.py | python -m kb add -t mycoolscript`
+      `cat path/to/script.py | python -m kb add -t mycoolscript -c python_scripts`
